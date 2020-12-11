@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="474.0" prefWidth="661.0" style="-fx-background-color: #28252e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.elena.Warehouse1.OperatorController">
+   <children>
+      <Label layoutX="271.0" layoutY="14.0" text="Operator" textFill="#fffdfd">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <HBox layoutY="79.0" prefHeight="62.0" prefWidth="668.0" style="-fx-border-color: #1ba1d1; -fx-border-width: 2;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#CreateNewStockPaneShow" prefHeight="39.0" prefWidth="145.0" style="-fx-background-color: #1ba1d1;" text="Create New Stock" textFill="#f5f4f4">
+               <HBox.margin>
+                  <Insets left="15.0" top="8.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="32.0" layoutY="20.0" mnemonicParsing="false" onAction="#CreateInvoicePaneShow" prefHeight="39.0" prefWidth="82.0" style="-fx-background-color: #1ba1d1;" text="Invoices" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="8.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="197.0" layoutY="20.0" mnemonicParsing="false" onAction="#CreateDeliveryNotePaneShow" prefHeight="39.0" prefWidth="128.0" style="-fx-background-color: #1ba1d1;" text="Delivery Notes" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="8.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="299.0" layoutY="20.0" mnemonicParsing="false" onAction="#SearchPaneShow" prefHeight="39.0" prefWidth="100.0" style="-fx-background-color: #1ba1d1;" text="Search" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="8.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="447.0" layoutY="20.0" mnemonicParsing="false" onAction="#ReferencePaneShow" prefHeight="39.0" prefWidth="100.0" style="-fx-background-color: #1ba1d1;" text="Reference" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="8.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="new_stock_pane" layoutY="141.0" prefHeight="459.0" prefWidth="661.0">
+         <children>
+            <Label layoutX="295.0" layoutY="50.0" text="Stock" textFill="#f8f5f5">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name_stock" layoutX="206.0" layoutY="91.0" prefHeight="35.0" prefWidth="250.0" promptText="Name" />
+            <TextField fx:id="amount_stock" layoutX="206.0" layoutY="151.0" prefHeight="35.0" prefWidth="250.0" promptText="Amount" />
+            <TextField fx:id="type_stock" layoutX="206.0" layoutY="212.0" prefHeight="35.0" prefWidth="250.0" promptText="Type" />
+            <TextField fx:id="brand_stock" layoutX="206.0" layoutY="274.0" prefHeight="35.0" prefWidth="250.0" promptText="Brand" />
+            <Button layoutX="232.0" layoutY="380.0" mnemonicParsing="false" onAction="#CreateStock" prefHeight="39.0" prefWidth="197.0" style="-fx-background-color: #1ba1d1;" text="Create New Stock" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="price_for_buying" layoutX="206.0" layoutY="331.0" prefHeight="35.0" prefWidth="250.0" promptText="Price For Buying" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="invoice_pane" layoutX="7.0" layoutY="141.0" prefHeight="459.0" prefWidth="661.0" visible="false">
+         <children>
+            <Label layoutX="28.0" layoutY="14.0" text="Client" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phone_client_invoice" layoutX="89.0" layoutY="12.0" prefHeight="25.0" prefWidth="120.0" promptText="Phone Number" />
+            <Button layoutX="492.0" layoutY="397.0" mnemonicParsing="false" onAction="#CreateInvoice" prefHeight="39.0" prefWidth="145.0" style="-fx-background-color: #1ba1d1;" text="Create Invoice" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="241.0" layoutY="67.0" text="Add Stock To Invoice" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Stock_name_invoice" layoutX="205.0" layoutY="135.0" prefHeight="30.0" prefWidth="250.0" promptText="Stock Name" AnchorPane.leftAnchor="205.0" />
+            <Label layoutX="286.0" layoutY="115.0" text="Stock Name" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Brand_Invoice" layoutX="206.0" layoutY="204.0" prefHeight="30.0" prefWidth="250.0" promptText="Brand" AnchorPane.leftAnchor="206.0" />
+            <Label layoutX="311.0" layoutY="184.0" text="Brand" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amount_invoice" layoutX="209.0" layoutY="276.0" prefHeight="30.0" prefWidth="250.0" promptText="Amount" />
+            <Label layoutX="304.0" layoutY="256.0" text="Amount" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="289.0" layoutY="319.0" mnemonicParsing="false" onAction="#AddInvoiceItems" prefHeight="20.0" prefWidth="91.0" style="-fx-background-color: #1ba1d1;" text="Add" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="380.0" layoutY="15.0" text="Cash Register" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cash_register_invoice" layoutX="496.0" layoutY="12.0" prefHeight="25.0" prefWidth="120.0" promptText="Cash Register" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="delivery_note_pane" layoutX="7.0" layoutY="141.0" prefHeight="459.0" prefWidth="648.0" visible="false">
+         <children>
+            <Label layoutX="28.0" layoutY="28.0" text="Supplier" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phone_number_supplier" layoutX="98.0" layoutY="26.0" prefHeight="25.0" prefWidth="120.0" promptText="Phone Number" />
+            <Button fx:id="btn_create_delivery_note" layoutX="437.0" layoutY="406.0" mnemonicParsing="false" onAction="#CreateDeliveryNote" prefHeight="39.0" prefWidth="197.0" style="-fx-background-color: #1ba1d1;" text="Create Delivery Note" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="211.0" layoutY="80.0" text="Add Stock To Delivery Note" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Stock_name_delivery_note" layoutX="205.0" layoutY="149.0" prefHeight="30.0" prefWidth="250.0" promptText="Stock Name" />
+            <Label layoutX="286.0" layoutY="129.0" text="Stock Name" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Brand_delivery_note" layoutX="206.0" layoutY="218.0" prefHeight="30.0" prefWidth="250.0" promptText="Brand" />
+            <Label layoutX="311.0" layoutY="198.0" text="Brand" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amount_delivery_note" layoutX="209.0" layoutY="290.0" prefHeight="30.0" prefWidth="250.0" promptText="Amount" />
+            <Label layoutX="304.0" layoutY="270.0" text="Amount" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="289.0" layoutY="333.0" mnemonicParsing="false" onAction="#AddDeliveryNoteItems" prefHeight="20.0" prefWidth="91.0" style="-fx-background-color: #1ba1d1;" text="Add" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="386.0" layoutY="29.0" text="Cash Register" textFill="#fffdfd">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cash_register_delivery_note" layoutX="496.0" layoutY="26.0" prefHeight="25.0" prefWidth="120.0" promptText="Cash Register" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="search_pane" layoutY="141.0" onDragDetected="#SearchStockPaneShow" prefHeight="459.0" prefWidth="668.0" visible="false">
+         <children>
+            <Button layoutX="66.0" layoutY="20.0" mnemonicParsing="false" onAction="#SearchStockPaneShow" prefHeight="39.0" prefWidth="250.0" style="-fx-background-color: #1ba1d1;" text="Search Stock" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="340.0" layoutY="20.0" mnemonicParsing="false" onAction="#SearchCashRegisterPaneShow" prefHeight="39.0" prefWidth="267.0" style="-fx-background-color: #1ba1d1;" text="Search Cash Register" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="search_cash_register_pane" layoutX="7.0" layoutY="66.0" prefHeight="393.0" prefWidth="661.0" visible="false">
+               <children>
+                  <Label layoutX="184.0" layoutY="185.0" text="Cash Register Name" textFill="#1ba1d1">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="389.0" layoutY="185.0" text="Money" textFill="#1ba1d1">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="243.0" layoutY="33.0" text="Cash Register Name" textFill="#fffdfd">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="search_cash_register_name" layoutX="231.0" layoutY="71.0" prefHeight="30.0" prefWidth="200.0" promptText="Name" />
+                  <Label fx:id="name_cash_register_label" layoutX="208.0" layoutY="223.0" text="name" textFill="#f5f7f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="281.0" layoutY="108.0" mnemonicParsing="false" onAction="#SearchCashRegister" prefHeight="39.0" prefWidth="100.0" style="-fx-background-color: #1ba1d1;" text="Search" textFill="#f5f4f4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="money_cash_register_label" layoutX="392.0" layoutY="223.0" text="money" textFill="#f5f7f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="100.0" endY="-1.0" layoutX="273.0" layoutY="257.0" startX="100.0" startY="-81.5" stroke="#1ba1d1" />
+                  <Line endX="100.0" endY="-1.0" layoutX="382.0" layoutY="257.0" startX="100.0" startY="-81.5" stroke="#1ba1d1" />
+                  <Line endX="100.0" endY="-1.0" layoutX="74.0" layoutY="257.0" startX="100.0" startY="-81.5" stroke="#1ba1d1" />
+                  <Line endX="-46.0" endY="-93.5" layoutX="220.0" layoutY="350.0" startX="261.5" startY="-93.5" stroke="#1ba1d1" />
+                  <Line endX="-46.0" endY="-93.5" layoutX="220.0" layoutY="268.0" startX="261.5" startY="-93.5" stroke="#1ba1d1" />
+                  <Line endX="-46.0" endY="-93.5" layoutX="220.0" layoutY="309.0" startX="261.5" startY="-93.5" stroke="#1ba1d1" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="search_stock_pane" layoutX="7.0" layoutY="66.0" prefHeight="393.0" prefWidth="661.0" visible="false">
+               <children>
+                  <Label layoutX="14.0" layoutY="169.0" text="Stock Name" textFill="#1ba1d1">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="157.0" layoutY="169.0" text="Brand" textFill="#1ba1d1">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="301.0" layoutY="169.0" text="Type" textFill="#1ba1d1">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="395.0" layoutY="169.0" text="Price For Buying" textFill="#1ba1d1">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="564.0" layoutY="169.0" text="Amount" textFill="#1ba1d1">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="173.0" layoutY="40.0" text="Stock Name" textFill="#fffdfd">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="391.0" layoutY="40.0" text="Stock Brand" textFill="#fffdfd">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="search_stock_name" layoutX="124.0" layoutY="71.0" prefHeight="30.0" prefWidth="200.0" promptText="Stock Name" />
+                  <TextField fx:id="search_stock_brand" layoutX="345.0" layoutY="71.0" prefHeight="30.0" prefWidth="200.0" promptText="Brand" />
+                  <Label fx:id="stock_name_label" layoutX="14.0" layoutY="211.0" text="name" textFill="#f5f7f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="281.0" layoutY="114.0" mnemonicParsing="false" onAction="#SearchStock" prefHeight="39.0" prefWidth="100.0" style="-fx-background-color: #1ba1d1;" text="Search" textFill="#f5f4f4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="brand_stock_label" layoutX="147.0" layoutY="211.0" text="brand" textFill="#f5f7f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="type_stock_label" layoutX="264.0" layoutY="211.0" text="type" textFill="#f5f7f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price_stock_label" layoutX="447.0" layoutY="211.0" text="price" textFill="#f5f7f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount_stock_label" layoutX="567.0" layoutY="211.0" text="amount" textFill="#f5f7f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="543.0" endY="-7.0" fill="#1ba1d1" layoutX="101.0" layoutY="169.0" startX="-95.0" startY="-7.0" stroke="#1ba1d1" style="-fx-fill: #1ba1d1;" />
+                  <Line endX="543.0" endY="-7.0" fill="#1ba1d1" layoutX="100.0" layoutY="250.0" startX="-95.0" startY="-7.0" stroke="#1ba1d1" style="-fx-fill: #1ba1d1;" />
+                  <Line endX="543.0" endY="-7.0" fill="#1ba1d1" layoutX="101.0" layoutY="203.0" startX="-95.0" startY="-7.0" stroke="#1ba1d1" style="-fx-fill: #1ba1d1;" />
+                  <Line endX="100.0" endY="-1.0" layoutX="-96.0" layoutY="244.0" startX="101.5" startY="-82.5" stroke="#1ba1d1" />
+                  <Line endX="100.0" endY="-1.0" layoutX="40.0" layoutY="243.0" startX="100.0" startY="-81.5" stroke="#1ba1d1" />
+                  <Line endX="100.0" endY="-1.0" layoutX="160.0" layoutY="243.0" startX="100.0" startY="-81.5" stroke="#1ba1d1" />
+                  <Line endX="100.0" endY="-1.0" layoutX="281.0" layoutY="243.0" startX="100.0" startY="-81.5" stroke="#1ba1d1" />
+                  <Line endX="100.0" endY="-1.0" layoutX="445.0" layoutY="243.0" startX="100.0" startY="-81.5" stroke="#1ba1d1" />
+                  <Line endX="100.0" endY="-1.0" layoutX="543.0" layoutY="243.0" startX="100.0" startY="-81.5" stroke="#1ba1d1" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="reference_pane" layoutY="147.0" prefHeight="453.0" prefWidth="668.0" visible="false">
+         <children>
+            <Button fx:id="btn_delivery" layoutX="159.0" layoutY="43.0" mnemonicParsing="false" onAction="#ShowTableDelivery" prefHeight="39.0" prefWidth="350.0" style="-fx-background-color: #1ba1d1;" text="Delivery Notes" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="159.0" layoutY="100.0" mnemonicParsing="false" onAction="#ShowTableInvoice" prefHeight="39.0" prefWidth="350.0" style="-fx-background-color: #1ba1d1;" text="Invoices" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="159.0" layoutY="156.0" mnemonicParsing="false" onAction="#ShowTableOperator" prefHeight="39.0" prefWidth="350.0" style="-fx-background-color: #1ba1d1;" text="Operators" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="159.0" layoutY="213.0" mnemonicParsing="false" onAction="#ShowTableProfit" prefHeight="39.0" prefWidth="350.0" style="-fx-background-color: #1ba1d1;" text="Income, Expence, Profit" textFill="#f5f4f4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
