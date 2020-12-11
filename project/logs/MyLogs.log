@@ -1,0 +1,79 @@
+[INFO ] 2020-12-06 19:33:48.594 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-06 19:33:48.597 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-06 19:40:58.315 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-06 19:40:58.317 [JavaFX Application Thread] LoginController - Entering password
+[ERROR] 2020-12-06 19:41:02.886 [JavaFX Application Thread] LoginController - Null pointer exception 
+[INFO ] 2020-12-06 19:41:19.664 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-06 19:41:19.664 [JavaFX Application Thread] LoginController - Entering password
+[ERROR] 2020-12-06 19:41:23.068 [JavaFX Application Thread] LoginController - Invalid Username or Password 
+[INFO ] 2020-12-06 19:41:45.240 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-06 19:41:45.240 [JavaFX Application Thread] LoginController - Entering password
+[ERROR] 2020-12-06 19:42:00.220 [JavaFX Application Thread] LoginController - Invalid Username or Password 
+[INFO ] 2020-12-08 15:13:44.866 [JavaFX Application Thread] LoginController - New Operator created 
+[INFO ] 2020-12-08 15:22:58.310 [JavaFX Application Thread] LoginController - New Operator created 
+[ERROR] 2020-12-08 15:25:19.227 [JavaFX Application Thread] LoginController - Not all fields are filled 
+[ERROR] 2020-12-08 15:48:12.841 [JavaFX Application Thread] LoginController - Null pointer exception 
+[INFO ] 2020-12-09 10:56:14.940 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 10:56:14.942 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 10:56:17.356 [JavaFX Application Thread] LoginController - Login like Admin
+[INFO ] 2020-12-09 11:40:58.315 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 11:40:58.318 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 11:41:00.187 [JavaFX Application Thread] LoginController - Login like Admin
+[INFO ] 2020-12-09 11:47:09.562 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 11:47:09.564 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 11:47:11.451 [JavaFX Application Thread] LoginController - Login like Admin
+[INFO ] 2020-12-09 11:50:41.437 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 11:50:41.439 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 11:50:45.469 [JavaFX Application Thread] LoginController - Login like Admin
+[ERROR] 2020-12-09 16:28:49.310 [JavaFX Application Thread] LoginController - Null pointer exception 
+[INFO ] 2020-12-09 16:31:16.374 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 16:31:16.374 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 16:31:22.826 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-09 16:39:33.522 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 16:39:33.524 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 16:39:35.885 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-09 16:40:47.837 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 16:40:47.839 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 16:40:52.506 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-09 18:27:06.754 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 18:27:06.755 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 18:27:18.988 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-09 21:02:06.781 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 21:02:06.783 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 21:02:09.567 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-09 21:17:06.251 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 21:17:06.252 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 21:17:08.970 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-09 21:24:59.521 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 21:24:59.524 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 21:25:02.145 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-09 21:33:52.284 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 21:33:52.287 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 21:33:54.411 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-09 21:40:50.437 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 21:40:50.439 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 21:40:52.285 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-09 21:45:17.217 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 21:45:17.219 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 21:45:19.332 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-09 21:52:46.886 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-09 21:52:46.888 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-09 21:52:48.455 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-10 13:02:04.249 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-10 13:02:04.251 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-10 13:02:06.619 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-10 18:01:14.415 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-10 18:01:14.418 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-10 18:02:48.528 [JavaFX Application Thread] LoginController - Login like Operator
+[INFO ] 2020-12-11 11:53:16.915 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-11 11:53:16.917 [JavaFX Application Thread] LoginController - Entering password
+[ERROR] 2020-12-11 11:53:18.843 [JavaFX Application Thread] LoginController - Invalid Username, Password Or Type 
+[INFO ] 2020-12-11 11:53:25.305 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-11 11:53:25.305 [JavaFX Application Thread] LoginController - Entering password
+[ERROR] 2020-12-11 11:53:27.700 [JavaFX Application Thread] LoginController - Invalid Username, Password Or Type 
+[INFO ] 2020-12-11 11:53:32.435 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-11 11:53:32.436 [JavaFX Application Thread] LoginController - Entering password
+[ERROR] 2020-12-11 11:53:39.895 [JavaFX Application Thread] LoginController - Invalid Username, Password Or Type 
+[INFO ] 2020-12-11 11:53:48.856 [JavaFX Application Thread] LoginController - Entering username
+[INFO ] 2020-12-11 11:53:48.857 [JavaFX Application Thread] LoginController - Entering password
+[INFO ] 2020-12-11 11:53:51.806 [JavaFX Application Thread] LoginController - Login like Admin

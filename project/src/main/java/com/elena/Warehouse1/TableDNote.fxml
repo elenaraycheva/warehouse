@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="delivery" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #28252e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.elena.Warehouse1.TableDeliveryController">
+   <children>
+      <TableView fx:id="table_delivery" layoutY="45.0" prefHeight="556.0" prefWidth="500.0" style="-fx-background-color: #28252e;">
+        <columns>
+          <TableColumn fx:id="col_date" prefWidth="162.0" text="Date" />
+          <TableColumn fx:id="col_supplier" prefWidth="169.0" text="Supplier" />
+            <TableColumn fx:id="col_operator" prefWidth="168.0" text="Operator" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="from_date" layoutX="14.0" layoutY="2.0" promptText="From Date" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="2.0" />
+      <DatePicker fx:id="to_date" layoutX="233.0" layoutY="2.0" promptText="To Date" />
+      <Button layoutX="428.0" layoutY="2.0" mnemonicParsing="false" onAction="#ShowRecords" text="Search" />
+   </children>
+</AnchorPane>
